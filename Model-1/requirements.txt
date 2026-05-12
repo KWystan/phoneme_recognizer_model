@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+panphon
+transformers
+torch
+librosa
+soundfile
+eng_to_ipa
+g2p_en
