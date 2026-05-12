@@ -10,7 +10,7 @@ def compute_audio_stats(audio, sr):
     zcr = float(np.mean(np.abs(np.diff(np.sign(audio))) > 0))
 
     return {
-        "duration_sec": round(duration, 3),
+        "duration_sec": round(duration, 4),
         "peak": round(peak, 4),
         "rms": round(rms, 4),
         "zcr": round(zcr, 4),

@@ -15,7 +15,7 @@ def peak_normalize(audio: np.ndarray, target_peak: float = 0.95) -> np.ndarray:
         return audio
     return ((audio / peak) * target_peak).astype(np.float32)
 
-def trim_leading_trailing_silence(audio: np.ndarray, top_db: int = 25):
+def trim_leading_trailing_silence(audio: np.ndarray, top_db: int = 30):
     if len(audio) == 0:
         return audio
     trimmed, _ = librosa.effects.trim(audio, top_db=top_db)
