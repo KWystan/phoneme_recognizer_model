@@ -1,8 +1,12 @@
+import torch
+
 import os
+
+os.environ["HF_TOKEN"] = "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"
+
 import sys
 import io
 
-os.environ["HF_TOKEN"] = "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"
 # GLOBAL FIX: Force UTF-8 for all I/O and set Environment Variable
 os.environ["PYTHONUTF8"] = "1"
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
@@ -13,7 +17,7 @@ from fastapi import FastAPI, UploadFile, File, Form
 from model.phoneme_recognizer import recognizer
 from modules.audio_processor import clean_and_prepare_audio
 from modules.panphon_module import align_and_score
-from modules.phonology_engine import engine
+from phoneme_processes.engine import engine
 
 app = FastAPI()
 
