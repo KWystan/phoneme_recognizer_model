@@ -1,0 +1,23 @@
+# Core AI & Machine Learning
+torch
+transformers
+datasets
+
+# Audio Processing
+librosa
+numpy
+webrtcvad-wheels
+noisereduce
+
+# Phonetics & IPA
+eng_to_ipa
+panphon
+
+# Web Server
+fastapi
+uvicorn
+python-multipart
+
+# Utilities
+pandas
+httpx
