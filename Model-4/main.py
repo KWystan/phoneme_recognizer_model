@@ -2,7 +2,7 @@ import torch
 
 import os
 
-os.environ["HF_TOKEN"] = "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"
+
 
 import sys
 import io

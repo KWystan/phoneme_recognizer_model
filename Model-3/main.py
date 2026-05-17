@@ -2,7 +2,6 @@ import os
 import sys
 import io
 
-os.environ["HF_TOKEN"] = "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"
 # GLOBAL FIX: Force UTF-8 for all I/O and set Environment Variable
 os.environ["PYTHONUTF8"] = "1"
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
